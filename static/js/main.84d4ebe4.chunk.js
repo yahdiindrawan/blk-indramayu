@@ -1,2 +1,0 @@
-(this["webpackJsonpuptd-blk-indramayu"]=this["webpackJsonpuptd-blk-indramayu"]||[]).push([[0],{26:function(t,e,n){},42:function(t,e,n){"use strict";n.r(e);n(0);var c=n(11),r=n.n(c),s=(n(25),n(26),n(20)),a=n(1),i=n(7);function d(){return Object(i.jsx)(s.a,{children:Object(i.jsx)(a.c,{children:Object(i.jsx)(a.a,{path:"/",children:Object(i.jsx)("p",{children:"Test"})})})})}var p=n(19);n.n(p).a.setAppElement("#root"),r.a.render(Object(i.jsx)(d,{}),document.getElementById("root"))}},[[42,1,2]]]);
-//# sourceMappingURL=main.84d4ebe4.chunk.js.map
