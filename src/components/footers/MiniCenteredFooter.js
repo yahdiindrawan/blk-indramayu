@@ -58,7 +58,7 @@ export default () => {
             <Link href="#program">Program</Link>
             <Link href="#informasi">Informasi</Link>
             <Link href="#galeri">Galeri</Link>
-            <Link href="#galeri">Web Terkait</Link>
+            <Link href="#">Web Terkait</Link>
             {/* <Link href="https://kemnaker.go.id/" target="_blank">Sisnaker</Link>
             <Link href="#">Tentang</Link> */}
           </LinksContainer>
