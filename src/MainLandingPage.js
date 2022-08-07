@@ -26,7 +26,7 @@ export default () => {
         primaryButtonText="Program"
         primaryButtonUrl="#program"
         watchVideoButtonText="Tutorial Pendaftaran"
-        watchVideoYoutubeUrl="https://www.youtube.com/embed/tfDjlAI69GI"
+        watchVideoYoutubeUrl="https://www.youtube.com/embed/26M_6GS9gcQ"
       />
       <Features />
       {/* TabGrid Component also accepts a tabs prop to customize the tabs and its content directly. Please open the TabGrid component file to see the structure of the tabs props.*/}
