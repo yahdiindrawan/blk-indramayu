@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
-import LogoImage from "images/logos/logo-blk.png";
+// import LogoImage from "images/logos/logo-blk.png";
 import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "images/youtube-icon.svg";
@@ -58,7 +58,7 @@ export default () => {
                 <Link href="#beranda">Beranda</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#pelatihan">Pelatihan</Link>
+                <Link href="#program">Program</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#pengumuman">Pengumuman</Link>

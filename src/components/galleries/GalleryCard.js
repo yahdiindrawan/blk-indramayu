@@ -5,34 +5,23 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { SectionHeading } from "components/misc/Headings.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-5.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-7.svg";
-import Pelatihan1 from "images/pelatihan/Pelatihan-1.png"
-import Pelatihan2 from "images/pelatihan/Pelatihan-2.png"
-import Pelatihan3 from "images/pelatihan/Pelatihan-3.png"
-import Pelatihan4 from "images/pelatihan/Pelatihan-4.png"
-import Pelatihan5 from "images/pelatihan/Pelatihan-5.png"
-import Pelatihan6 from "images/pelatihan/Pelatihan-6.png"
-import Pelatihan7 from "images/pelatihan/Pelatihan-7.png"
-import Pelatihan8 from "images/pelatihan/Pelatihan-8.png"
-import Pelatihan9 from "images/pelatihan/Pelatihan-9.png"
-import Pelatihan10 from "images/pelatihan/Pelatihan-10.png"
-import Pelatihan11 from "images/pelatihan/Pelatihan-11.png"
-import Pelatihan12 from "images/pelatihan/Pelatihan-12.png"
+import Galleri1 from "images/galleries/galleri-1.jpeg"
+import Galleri2 from "images/galleries/galleri-2.jpeg"
+import Galleri3 from "images/galleries/galleri-3.jpeg"
+import Galleri4 from "images/galleries/galleri-4.jpeg"
+import Galleri5 from "images/galleries/galleri-5.jpeg"
+import Galleri6 from "images/galleries/galleri-6.jpeg"
+import Galleri7 from "images/galleries/galleri-7.jpeg"
+import Galleri8 from "images/galleries/galleri-8.jpeg"
+import Galleri9 from "images/galleries/galleri-9.jpeg"
+import Galleri10 from "images/galleries/galleri-10.jpeg"
+import Galleri11 from "images/galleries/galleri-11.jpeg"
+import Galleri12 from "images/galleries/galleri-12.jpeg"
 
-const HeaderRow = tw.div`flex justify-between items-center flex-col xl:flex-row`;
+const HeaderRow = tw.div`flex justify-center items-center flex-col xl:flex-row`;
 const Header = tw(SectionHeading)``;
-const TabsControl = tw.div`flex flex-wrap bg-gray-200 px-2 py-2 rounded leading-none mt-12 xl:mt-0`;
-
-const TabControl = styled.div`
-  ${tw`cursor-pointer px-6 py-3 mt-2 sm:mt-0 sm:mr-2 last:mr-0 text-gray-600 font-medium rounded-sm transition duration-300 text-sm sm:text-base w-1/2 sm:w-auto text-center`}
-  &:hover {
-    ${tw`bg-gray-300 text-gray-700`}
-  }
-  ${props => props.active && tw`bg-primary-500! text-gray-100!`}
-  }
-`;
 
 const TabContent = tw(motion.div)`mt-6 flex flex-wrap sm:-mr-10 md:-mr-6 lg:-mr-12`;
 const CardContainer = tw.div`mt-10 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 sm:pr-10 md:pr-6 lg:pr-12`;
@@ -49,18 +38,6 @@ const CardImageContainer = styled.div`
 //   }
 // `;
 
-const CardHoverOverlay = styled(motion.div)`
-  background-color: rgba(255, 255, 255, 0.5);
-  ${tw`absolute inset-0 flex justify-center items-center`}
-`;
-const CardButton = tw(PrimaryButtonBase)`text-sm`;
-
-// const CardReview = tw.div`font-medium text-xs text-gray-600`;
-
-const CardText = tw.div`p-4 text-gray-900`;
-const CardTitle = tw.h5`text-lg font-semibold group-hover:text-primary-500`;
-const CardContent = tw.p`mt-1 text-sm font-medium text-gray-600`;
-// const CardPrice = tw.p`mt-4 text-xl font-bold`;
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
   ${tw`pointer-events-none -z-20 absolute right-0 top-0 h-64 w-64 opacity-15 transform translate-x-2/3 -translate-y-12 text-pink-400`}
@@ -74,73 +51,73 @@ export default ({
   tabs = {
     Semua: [
       {
-        imageSrc: Pelatihan1,
+        imageSrc: Galleri1,
         title: "Teknik Las",
         category: "Dibuka",
         url: "#"
       },
       {
-        imageSrc: Pelatihan2,
+        imageSrc: Galleri2,
         title: "Teknik Otomotif",
         category: "Segera",
         url: "#"
       },
       {
-        imageSrc: Pelatihan3,
+        imageSrc: Galleri3,
         title: "Desain Grafis",
         category: "Ditutup",
         url: "#"
       },
       {
-        imageSrc: Pelatihan4,
+        imageSrc: Galleri4,
         title: "Garmen Apparel",
         category: "Ditutup",
         url: "#"
       },
       {
-        imageSrc: Pelatihan5,
+        imageSrc: Galleri5,
         title: "Practical Office",
         category: "Ditutup",
         url: "#"
       },
       {
-        imageSrc: Pelatihan6,
+        imageSrc: Galleri6,
         title: "Perawatan AC",
         category: "Ditutup",
         url: "#"
       },
       {
-        imageSrc: Pelatihan7,
+        imageSrc: Galleri7,
         title: "Caretaker - Baby Sitter",
         category: "Dibuka",
         url: "#"
       },
       {
-        imageSrc: Pelatihan8,
+        imageSrc: Galleri8,
         title: "Tata Rias",
         category: "Dibuka",
         url: "#"
       },
       {
-        imageSrc: Pelatihan9,
+        imageSrc: Galleri9,
         title: "Bahasa Asing",
         category: "Segera",
         url: "#"
       },
       {
-        imageSrc: Pelatihan10,
+        imageSrc: Galleri10,
         title: "Safety / K3 Umum",
         category: "Dibuka",
         url: "#"
       },
       {
-        imageSrc: Pelatihan11,
+        imageSrc: Galleri11,
         title: "Operator Forklift",
         category: "Ditutup",
         url: "#"
       },
       {
-        imageSrc: Pelatihan12,
+        imageSrc: Galleri12,
         title: "Scaffolder",
         category: "Segera",
         url: "#"
@@ -157,20 +134,13 @@ export default ({
    * To see what attributes are configurable of each object inside this array see the example above for "Starters".
    */
   const tabsKeys = Object.keys(tabs);
-  const [activeTab, setActiveTab] = useState(tabsKeys[0]);
+  const [activeTab] = useState(tabsKeys[0]);
 
   return (
-    <Container id="program">
+    <Container id="galeri">
       <ContentWithPaddingXl>
         <HeaderRow>
           <Header>{heading}</Header>
-          <TabsControl>
-            {Object.keys(tabs).map((tabName, index) => (
-              <TabControl key={index} active={activeTab === tabName} onClick={() => setActiveTab(tabName)}>
-                {tabName}
-              </TabControl>
-            ))}
-          </TabsControl>
         </HeaderRow>
 
         {tabsKeys.map((tabKey, index) => (
@@ -196,27 +166,7 @@ export default ({
               <CardContainer key={index}>
                 <Card className="group" href={card.url} initial="rest" whileHover="hover" animate="rest">
                   <CardImageContainer imageSrc={card.imageSrc}>
-                    <CardHoverOverlay
-                      variants={{
-                        hover: {
-                          opacity: 1,
-                          height: "auto"
-                        },
-                        rest: {
-                          opacity: 0,
-                          height: 0
-                        }
-                      }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <CardButton>Daftar Pelatihan</CardButton>
-                    </CardHoverOverlay>
                   </CardImageContainer>
-                  <CardText>
-                    <CardTitle>{card.title}</CardTitle>
-                    <CardContent>{card.category}</CardContent>
-                    {/* <CardPrice>{card.price}</CardPrice> */}
-                  </CardText>
                 </Card>
               </CardContainer>
             ))}
@@ -233,73 +183,73 @@ export default ({
 const getRandomCards = (category) => {
   const cards = [
     {
-      imageSrc: Pelatihan1,
+      imageSrc: Galleri1,
       title: "Teknik Las",
       category: "Dibuka",
       url: "#"
     },
     {
-      imageSrc: Pelatihan2,
+      imageSrc: Galleri2,
       title: "Teknik Otomotif",
       category: "Segera",
       url: "#"
     },
     {
-      imageSrc: Pelatihan3,
+      imageSrc: Galleri3,
       title: "Desain Grafis",
       category: "Ditutup",
       url: "#"
     },
     {
-      imageSrc: Pelatihan4,
+      imageSrc: Galleri4,
       title: "Garmen Apparel",
       category: "Ditutup",
       url: "#"
     },
     {
-      imageSrc: Pelatihan5,
+      imageSrc: Galleri5,
       title: "Practical Office",
       category: "Ditutup",
       url: "#"
     },
     {
-      imageSrc: Pelatihan6,
+      imageSrc: Galleri6,
       title: "Perawatan AC",
       category: "Ditutup",
       url: "#"
     },
     {
-      imageSrc: Pelatihan7,
+      imageSrc: Galleri7,
       title: "Caretaker - Baby Sitter",
       category: "Dibuka",
       url: "#"
     },
     {
-      imageSrc: Pelatihan8,
+      imageSrc: Galleri8,
       title: "Tata Rias",
       category: "Dibuka",
       url: "#"
     },
     {
-      imageSrc: Pelatihan9,
+      imageSrc: Galleri9,
       title: "Bahasa Asing",
       category: "Segera",
       url: "#"
     },
     {
-      imageSrc: Pelatihan10,
+      imageSrc: Galleri10,
       title: "Safety / K3 Umum",
       category: "Dibuka",
       url: "#"
     },
     {
-      imageSrc: Pelatihan11,
+      imageSrc: Galleri11,
       title: "Operator Forklift",
       category: "Ditutup",
       url: "#"
     },
     {
-      imageSrc: Pelatihan12,
+      imageSrc: Galleri12,
       title: "Scaffolder",
       category: "Segera",
       url: "#"

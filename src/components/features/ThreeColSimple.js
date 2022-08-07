@@ -5,7 +5,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
-import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
+// import { ReactComponent as ArrowRightIcon } from "images/arrow-right-icon.svg";
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import SimpleIconImage from "images/simple-icon.svg";
@@ -55,7 +55,7 @@ export default ({
     {
       imageSrc: ShieldIconImage,
       title: "20+",
-      description: "Pelatihan"
+      description: "Program"
     },
     {
       imageSrc: SimpleIconImage,

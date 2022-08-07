@@ -6,9 +6,9 @@ import logo from "../../images/logos/logo-blk.png";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
-import { ReactComponent as InstagramIcon } from "../../images/instagram-icon.svg";
+// import { ReactComponent as InstagramIcon } from "../../images/instagram-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-9.svg";
-import { NavLink } from "components/headers/light";
+// import { NavLink } from "components/headers/light";
 
 
 const Container = tw(ContainerBase)`bg-primary-800 text-white -mx-8 -mb-8`
@@ -55,10 +55,12 @@ export default () => {
           </LogoContainer>
           <LinksContainer>
             <Link href="#beranda">Beranda</Link>
-            <Link href="#pelatihan">Pelatihan</Link>
-            <Link href="#pengumuman">Pengumuman</Link>
-            <Link href="https://kemnaker.go.id/" target="_blank">Sisnaker</Link>
-            <Link href="#">Tentang</Link>
+            <Link href="#program">Program</Link>
+            <Link href="#informasi">Informasi</Link>
+            <Link href="#galeri">Galeri</Link>
+            <Link href="#galeri">Web Terkait</Link>
+            {/* <Link href="https://kemnaker.go.id/" target="_blank">Sisnaker</Link>
+            <Link href="#">Tentang</Link> */}
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://www.facebook.com/imyblk">
@@ -72,7 +74,7 @@ export default () => {
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2020, BLK Indramayu. All Rights Reserved.
+            &copy; Copyright 2022, BLK Indramayu. All Rights Reserved.
           </CopyrightText>
         </Row>
       </Content>

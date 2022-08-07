@@ -7,6 +7,8 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
 import logo from "images/logos/logo-blk.png";
+import logoPemkab from "images/logos/logo-pemkab-2.png";
+import logoKemnaker from "images/logos/logo-kemnaker.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
@@ -70,13 +72,19 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    * changing the defaultLinks variable below below.
    * If you manipulate links here, all the styling on the links is already done for you. If you pass links yourself though, you are responsible for styling the links or use the helper styled components that are defined here (NavLink)
    */
+  const goToWeb = () => {
+    window.open('https://pelatihan.kemnaker.go.id/')
+    window.open('https://jobfair.kemnaker.go.id/web')
+  }
   const defaultLinks = [
     <NavLinks key={1}>
       <NavLink href="/#beranda">Beranda</NavLink>
-      <NavLink href="/#pelatihan">Pelatihan</NavLink>
-      <NavLink href="/#pengumuman">Pengumuman</NavLink>
-      <NavLink href="https://kemnaker.go.id/" target="_blank">Sisnaker</NavLink>
-      <NavLink href="/#tentang">Tentang</NavLink>
+      <NavLink href="/#program">Program</NavLink>
+      <NavLink href="/#informasi">Informasi</NavLink>
+      <NavLink href="/#galeri">Galeri</NavLink>
+      <NavLink href="#" onClick={goToWeb}>Web Terkait</NavLink>
+      {/* <NavLink href="https://kemnaker.go.id/" target="_blank">Sisnaker</NavLink>
+      <NavLink href="/#tentang">Tentang</NavLink> */}
       {/* <NavLink href="/#" tw="lg:ml-12!">
         Login
       </NavLink>
@@ -88,10 +96,13 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
   const defaultLogoLink = (
-    <LogoLink href="/">
-      <img src={logo} alt="logo" />
-      BLK Indramayu
-    </LogoLink>
+    <>
+      <LogoLink href="/">
+        <img src={logoKemnaker} alt="logo" />
+        <img src={logoPemkab} alt="logo" />
+        <img src={logo} alt="logo" />
+      </LogoLink>
+    </>
   );
 
   logoLink = logoLink || defaultLogoLink;

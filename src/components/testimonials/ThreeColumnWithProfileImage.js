@@ -46,7 +46,7 @@ export default ({
       quote:
         "Terima kasih BLK Indrmayu udah memfasilitasi peserta dengan baik, pelatihannya dan instrukturnya mudah diterima",
       customerName: "Khusni Ananda"
-    }
+    },
   ]
 }) => {
   return (
